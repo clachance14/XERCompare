@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and discussion
+    url: https://github.com/clachance14/XERCompare/discussions
+    about: Ask a question or discuss a scheduling workflow. Please keep project data private.

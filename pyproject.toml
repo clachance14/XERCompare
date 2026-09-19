@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xercompare"
+version = "0.3.0"
+description = "Offline Primavera P6 XER schedule comparison. Two files in, Excel + PDF out. No P6 license, no network."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "XERCompare contributors" }]
+keywords = ["primavera", "p6", "xer", "schedule", "comparison", "dcma"]
+dependencies = [
+  "openpyxl>=3.1.2",
+  "reportlab>=4.2.0",
+]
+
+[project.optional-dependencies]
+gui = []  # Native tkinter/ttk ships with Windows Python.
+dev = ["pytest>=8.0", "pytest-cov>=5.0"]
+build = ["pyinstaller>=6.6"]
+
+[project.scripts]
+xercompare = "xercompare.cli:main"
+
+[project.gui-scripts]
+xercompare-desktop = "xercompare.gui.launcher:entrypoint"
+
+[tool.setuptools.package-data]
+"xercompare.gui" = ["assets/*"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

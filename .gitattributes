@@ -1,0 +1,2 @@
+# Preserve cp1252 bytes, trailing empty fields, and line endings in XER fixtures.
+*.xer -text

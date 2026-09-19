@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.venv/
+venv/
+compare.xlsx
+compare.pdf
+*.spec
+.idea/
+.vscode/
+
+# Local project exports are never committed.
+tests/fixtures/real/
+out/
+
+# Credentials and local-only environment configuration.
+.env
+.env.*
+*.pem
+*.key
+
+# Generated demo report previews; reviewed product images live in docs/images/.
+demo/**/*.png
+demo/*.png

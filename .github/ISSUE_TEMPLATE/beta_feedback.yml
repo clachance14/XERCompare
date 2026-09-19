@@ -1,0 +1,38 @@
+name: Share your experience
+description: A short beta review, including what worked and what could be clearer.
+title: "[Feedback] "
+labels: [feedback]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Your feedback helps guide the next release. This form is public;
+        please leave out confidential schedule data and identifying details.
+  - type: input
+    id: version
+    attributes:
+      label: App version and Windows version
+      placeholder: "XERCompare 0.3.0 on Windows 11"
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Did the app open and compare your files?
+      options:
+        - Opened and created the reports
+        - Opened but could not complete a comparison
+        - Could not open the app
+        - Have not tried a comparison yet
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: What was useful, confusing, or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: What would make you use XERCompare regularly?

@@ -1,0 +1,66 @@
+name: Report a problem
+description: Tell us about a crash, incorrect result, or confusing behavior.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This report will be public. Do not upload confidential XERs, project reports,
+        or identifying screenshots. Use synthetic examples and remove private details.
+  - type: input
+    id: app_version
+    attributes:
+      label: XERCompare version
+      description: Shown near the bottom of the app's left navigation.
+      placeholder: "0.3.0"
+    validations:
+      required: true
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11, 64-bit"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Which screen, files or example, and actions led to the problem?
+      placeholder: "1. Open the app..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Include the error wording or affected report and field, with private details removed.
+    validations:
+      required: true
+  - type: dropdown
+    id: examples
+    attributes:
+      label: Does it happen with the included example files?
+      options:
+        - Not tried
+        - "Yes"
+        - "No"
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context or anonymized screenshot
+      description: Optional. P6 export version, approximate activity count, or a synthetic example may help.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have removed confidential project data and identifying details.
+          required: true

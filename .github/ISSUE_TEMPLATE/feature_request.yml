@@ -1,0 +1,27 @@
+name: Suggest a feature
+description: Explain a scheduling problem XERCompare could help solve.
+title: "[Idea] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: "This suggestion will be public. Please use generic or synthetic examples."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task and what makes it difficult today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
+      description: Explain the result or report you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle this today?
+      description: Optional. Tell us about your current workaround and how often you need it.
