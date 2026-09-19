@@ -2,8 +2,7 @@
 
 **Compare two Primavera P6 XER files. Get a detailed Excel workbook and a short PDF summary.**
 
-Free, open-source Windows app. Runs offline. No Python or P6 installation needed.
-Your schedules stay on your computer.
+Free, open-source Windows app. 
 
 ## Download and open
 
